@@ -1,0 +1,90 @@
+/* 
+    Document   : css_buss
+    Created on : 19/07/2011, 09:55:37 AM
+    Author     : Andres
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#buss {
+        width: 505px;
+        height: 235px;
+        background: #fafafa url('../images/img3.png') repeat;        
+        margin-top: 10px;
+        padding: 1px 1px 1px 0;
+        border: 1px solid #666;
+        border-right: 3px solid #666;
+        border-left: 0;
+        float: left;
+      }
+#front { height: 239px;
+        background: url('../images/frente.png') no-repeat;
+        width: 50px;
+        margin-top: 10px;
+        float: left;}  
+#leyenda {
+        width: 188px;
+        margin-top: 10px;
+        float: left;
+        border: 1px solid #ccc;
+        background: #fafafa;
+        margin-right: 30px;
+        padding: 10px;}
+#chofer, #puerta, .butaca, .spacer {
+        width: 60px; /* 85 */
+        height: 36px; /* 45 */               
+        float: left;          
+        margin-left: 1px;
+        margin-bottom: 1px;
+        font-size: 15px;
+        color:#fff;
+        font-weight: bold;   
+        
+        text-align: center;
+        padding-top: 10px;
+        
+      }  
+.butaca { cursor: pointer; }      
+.free:hover { 
+           
+            width: 60px; background-image: url('../images/butacas.png'); background-repeat: no-repeat; background-position: -120px 0; height: 36px;
+}
+#chofer {        
+        background: url('../images/butaca-chofer.png') center no-repeat;
+      }
+#puerta  {          
+          margin-left: 8px;
+          width: 52px;
+          background: #666;
+          font-size: 12px;
+          font-weight: normal;
+      }
+.spacer {
+       background: transparent;
+      }   
+.free {
+/*    background: url('../images/butaca-free.png')  center no-repeat;*/
+   width: 60px; background-image: url('../images/butacas.png'); background-repeat: no-repeat; background-position: 0px 0; height: 36px;
+}   
+.ocupado {
+/*    background: url('../images/butaca-ocupada.png') center no-repeat;*/
+width: 60px; background-image: url('../images/butacas.png'); background-repeat: no-repeat; background-position: -60px 0; height: 36px;
+}
+.reservado
+{
+    width: 60px; background-image: url('../images/butacas.png'); background-repeat: no-repeat; background-position: -180px 0; height: 36px;
+}
+.leyen, .text { width: 20px; 
+         height: 20px;
+        margin: 2px;
+        float: left;
+        margin-right: 5px;
+        }
+.libre { background: #399726;}
+.ocup { background: #7B3724;}
+.reser {background: #888478;}
+.text {width: 100px; margin-left: 5px; }

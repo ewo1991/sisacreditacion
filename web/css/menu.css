@@ -1,0 +1,169 @@
+/**
+ *********************************************
+ * Prototype of styles for horizontal CSS-menu
+ * @data 30.06.2009
+ *********************************************
+ * (X)HTML-scheme:
+ *  <div id="menu">
+ *      <ul class="menu">
+ *          <li><a href="#" class="parent"><span>level 1</span></a>
+ *              <ul>
+ *                  <li><a href="#" class="parent"><span>level 2</span></a>
+ *                      <ul><li><a href="#"><span>level 3</span></a></li></ul>
+ *                  </li>
+ *              </ul>
+ *          </li>
+ *          <li class="last"><a href="#"><span>level 1</span></a></li>
+ *      </ul>
+ *  </div>
+ *********************************************
+ */
+
+/* menu::base */
+body{
+    background-image: url("images_eapisi/fondo.gif");
+}
+div#menu-contenedor {
+    background-color:#75289A;
+    
+
+}
+.menu-fijo {
+    position: fixed;
+    top: 0;
+   width: 1000px;
+	z-index:99999;
+}
+
+div#menu-contenedor ul.menu {
+
+}
+
+div#menu-contenedor li {
+    position: relative;
+    z-index: 9;
+    margin: 0;
+    display: block;
+    
+}
+div#menu-contenedor li:hover>ul {
+    left: -2px;
+}
+
+div#menu-contenedor a {
+    position: relative;
+    z-index: 10;
+    height: 41px;
+    display: block;     
+    line-height: 41px;
+    text-decoration: none;
+    font: normal 12px Trebuchet MS;
+}
+div#menu-contenedor a:hover, div#menu-contenedor a:hover span { color: #fff; }
+div#menu-contenedor li.current a {}
+
+div#menu-contenedor span {
+    display: block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 95% 0;
+}
+div#menu-contenedor ul ul a.parent span {
+    background-position:95% 8px;
+    background-image: url(images_eapisi/item-pointer.gif);
+}
+div#menu-contenedor ul ul a.parent:hover span {
+    background-image: url(images_eapisi/item-pointer-mover.gif);
+}
+div#menu-contenedor ul ul a.parent span {
+    background-position:95% 8px;
+    background-image: url(images_eapisi/item-pointer.gif);
+}
+/* menu::level1 */
+div#menu-contenedor a {
+    padding: 0 10px 0 10px;
+    line-height: 30px;
+    color: #fff;
+}
+
+div#menu-contenedor a:hover{
+    padding: 0 10px 0 10px;
+    line-height: 30px;
+    text-align: center;
+    color: #75289A;
+}
+
+.glyphicon :hover{
+    color: white;
+}
+
+
+div#menu-contenedor span {
+    margin-top: 5px;
+}/**@replace#1*/
+div#menu-contenedor li {border-right: 1px solid white;}
+div#menu-contenedor li.last { border-right: 0; }
+
+/* menu::level2 */
+div#menu-contenedor ul ul li { background: none; }
+div#menu-contenedor ul ul {
+    position: absolute;
+    top: 38px;
+    left: -999em;
+    width: 163px;
+    padding: 5px 0 0 0;
+    background: none repeat scroll 0% 0% #1D4B73;
+    margin-top:1px;
+	
+}
+
+div#menu-contenedor ul ul a {
+    padding: 0 0 0 15px;
+    height: auto;
+    float: none;
+    display: block;
+    line-height: 24px;
+    color: rgb(169,169,169);
+}
+div#menu-contenedor ul ul span {
+    margin-top: 0;
+    padding-right: 15px;
+    _padding-right: 20px;
+    color: rgb(169,169,169);
+}
+div#menu-contenedor ul ul a:hover span {
+    color: #fff;font-weight:bold;
+}
+div#menu-contenedor ul ul li.last { background: none; }
+div#menu-contenedor ul ul li {
+    width: 100%;
+}
+
+/* menu::level3 */
+div#menu-contenedor ul ul ul {
+    padding: 0;
+    margin: -38px 0 0 163px !important;
+    margin-left:172px;
+}
+
+/* colors */
+div#menu-contenedor ul ul ul { background: rgb(14,14,14);border-left:1px solid #D1D1D1;border-right:1px solid #D1D1D1; }
+div#menu-contenedor ul ul ul ul { background: rgb(38,38,38); }
+div#menu-contenedor ul ul ul ul { background: rgb(35,35,35);border-top:1px solid #D1D1D1; }
+
+/* lava lamp */
+div#menu-contenedor li.back {
+    background: url(images_eapisi/lava.png) no-repeat right -44px !important;
+    background-image: url(../images_eapisi/lava.gif);
+    width: 13px;
+    height: 44px;
+    z-index: 8;
+    position: absolute;
+    margin: -1px 0 0 -5px;
+}
+div#menu-contenedor li.back .left {
+    background: url(images_eapisi/lava.png) no-repeat top left !important;
+    background-image: url(images_eapisi/lava.gif);
+    height: 44px;
+    margin-right: 8px;
+}

@@ -1,0 +1,245 @@
+div#bloque_general
+{
+width:998px; 
+height: 385px; 
+border:solid white 1px; 
+margin-top:30px; 
+background-color:white;
+}
+div#bloque_1
+{
+width:400px;
+height:380px; 
+margin-top:5px; 
+float:left; 
+margin-left:10px;
+}
+div#bloque_1_1
+{
+width:176px; 
+height:176px;
+margin-top:5px; 
+margin-left:15px; 
+float:left;
+}
+div#bloque_1_2
+{
+width:176px; 
+height:176px;
+margin-top:12px; 
+margin-left:15px; 
+float:left;
+}
+div#bloque_1_titulo
+{
+width:176px; 
+height:76px; 
+border:solid gray 1px; 
+background-color:#3F4344;
+}
+div#bloque_1 h2
+{
+margin-left:8px; 
+margin-right:8px;  
+margin-top: 10px;
+text-align : left; 
+font-family:Calibri; 
+font-size: 18px;
+}
+
+div#bloque_2_titgen
+{
+background-color:#3F4344;
+margin-top: 5px;
+}
+div#bloque_3_titgen
+{
+background-color:#3F4344;
+margin-top: 5px;
+}
+
+div#bloque_3_titgene
+{
+background-color:#3F4344;
+margin-top: 5px;
+}
+
+
+div#bloque_3
+{
+
+height:380px; 
+
+}
+div#bloque_3_1
+{
+
+height:176px;
+}
+div#bloque_3_titulo
+{
+height:76px; 
+border:solid gray 1px; 
+background-color:#3F4344;
+}
+div#bloque_3 h2
+{
+
+text-align : left; 
+font-family:Calibri; 
+font-size: 12px;
+}
+
+.view {
+    width: 176px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 5px #666;
+    cursor: default;
+}
+.view .mask, .view .content {
+    width: 176px;
+    height: 110px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    position: relative;
+    color: #fff;
+    padding: 5px 5px 0px 5px;
+	margin-left: 5px;
+	font-size:10px;
+	text-align: justify;
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+	font-size:9px;
+    padding: 2px 2px;
+    background-color:#812298;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 3px #000
+}
+
+.view-first img {
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(0, 0, 17, 0.5);
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+	
+}
+.view-first a.info{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img { 
+    transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+    opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+   transition-delay: 0.2s;
+}
+
+.view2 {
+    width: 162px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 5px #666;
+    cursor: default;
+}
+.view2 .mask, .view2 .content {
+    width: 162px;
+    height: 110px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+
+.view2 img {
+    display: block;
+    position: relative
+}
+.view2 h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0px 0 0 0
+}
+.view2 p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    position: relative;
+    color: #fff;
+    padding: 5px 5px 0px 5px;
+	margin-left: 5px;
+	font-size:10px;
+	text-align: justify;
+}
+.view2 a.info {
+    display: inline-block;
+    text-decoration: none;
+	font-size:9px;
+    padding: 2px 2px;
+    background-color:#812298;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view2 a.info:hover {
+    box-shadow: 0 0 3px #000
+}
